@@ -1,0 +1,35 @@
+.page {
+  margin-top: 73px;
+  display: flex;
+}
+.dashboard-centent {
+  flex: 1;
+}
+.title {
+  width: fit-content;
+  margin: auto;
+  color: var(--bleu-color);
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  margin: 20px auto;
+}
+.card {
+  padding: 8px 0px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px gray;
+}
+
+.logo {
+  color: var(--red-color);
+  transform: scale(1.3);
+}
