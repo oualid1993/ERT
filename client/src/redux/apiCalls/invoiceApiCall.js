@@ -7,7 +7,7 @@ export function CreateInvoice(invoice) {
   return async (dispatch) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/Invoice/addInvoice",
+        "https://ert.onrender.com/api/Invoice/addInvoice",
         invoice
       );
       if (data) toast.success(" facture a éte ajouter  ");
@@ -22,7 +22,7 @@ export function GetInvoice(page) {
   return async (dispatch) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/Invoice?page=${page}`
+        `https://ert.onrender.com/api/Invoice?page=${page}`
       );
       if (data) dispatch(invoiceActions.setInvoice(data));
     } catch (error) {

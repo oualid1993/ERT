@@ -7,7 +7,7 @@ export function loginUser(user) {
   return async (dispatch) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://ert.onrender.com/api/auth/login",
         user
       );
       dispatch(authActions.login(data));

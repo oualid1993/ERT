@@ -39,7 +39,7 @@ export default function Contact() {
     } else {
       try {
         const { data } = await axios.post(
-          "http://localhost:5000/api/message/addMessage",
+          "https://ert.onrender.com/api/message/addMessage",
           formData
         );
         toast.success(" message envoyé  ");
